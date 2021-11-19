@@ -3,11 +3,19 @@
     <head>
         <meta charset="utf-8">
         <title>~</title>
+        <link rel="stylesheet" type="text/css"
+              href="https://server.xpr.org/~/fonts/jetbrains_mono.css">
         <style>
             * {
                 margin: 0;
                 padding: 0;
                 box-sizing: border-box;
+            }
+
+            a {
+                color: inherit;
+                text-decoration: none;
+                border-bottom: 1px solid;
             }
 
             html, body {
@@ -16,19 +24,45 @@
             }
 
             body {
+                font-size: 14px;
+                text-transform: uppercase;
+                font-family: JetBrains Mono;
                 display: flex;
                 justify-content: center;
                 align-content: center;
                 padding: 2vw;
+                flex-direction: column;
+            }
+
+            nav {
+                display: flex;
+                justify-content: center;
+                grid-gap: 2ex;
+                white-space: nowrap;
             }
 
             img {
+                flex-shrink: 1;
+                min-height: 0;
                 max-width: 100%;
                 max-height: 100%;
+                object-fit: contain;
             }
         </style>
+        <script defer data-domain="xpr.org"
+                src="https://plausible.io/js/plausible.js"></script>
     </head>
     <body>
+        <nav>
+            <span>XPR.ORG</span>
+            <a href="/wikitype">/wikitype</a>
+            <span></span>
+            <span>:^)</span>
+            <span></span>
+            <a href="https://github.com/xprueg">GitHub</a>
+            <a href="https://steamcommunity.com/id/xprueg">Steam</a>
+            <a href="https://www.last.fm/user/xprueg">last.fm</a>
+        </nav>
         <img src="/img/jp.jpg"/>
     </body>
 </html>
